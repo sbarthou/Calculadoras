@@ -1,5 +1,3 @@
-# Calcula Masa/metro
-
 print('\nIngresar números decimales separados por un "."')
 print('-----------------------------------------------')
 
