@@ -6,7 +6,7 @@ valor = float(input('Valor: '))
 
 redondear = input('Redondear valores? si(s)/no(n): ')
 if redondear == 's' or redondear == 'si':
-    redondear = 'si'
+    redondear = True
     decimales = int(input('Número de decimales: '))
 print('')
 
@@ -15,7 +15,7 @@ if medida == 'm/s':
     km_s = valor/1000
     m_h = valor*3600
     km_h = (valor/1000)*3600
-    if redondear == 'si':
+    if redondear:
         print(f'{valor} m/s son {round(km_s, decimales)} km/s')
         print(f'{valor} m/s son {round(m_h, decimales)} m/h')
         print(f'{valor} m/s son {round(km_h, decimales)} km/h')
@@ -28,7 +28,7 @@ if medida == 'km/s':
     m_s = valor*1000
     m_h = valor*3600
     km_h = (valor*1000)*3600
-    if redondear == 'si':
+    if redondear:
         print(f'{valor} km/s son {round(m_s, decimales)} m/s')
         print(f'{valor} km/s son {round(m_h, decimales)} m/h')
         print(f'{valor} km/s son {round(km_h, decimales)} km/h')
@@ -41,7 +41,7 @@ if medida == 'm/h':
     m_s = valor/3600
     km_s = (valor/3600)/1000
     km_h = valor/1000
-    if redondear == 'si':
+    if redondear:
         print(f'{valor} m/h son {round(m_s, decimales)} m/s')
         print(f'{valor} m/h son {round(km_s, decimales)} km/s')
         print(f'{valor} m/h son {round(km_h, decimales)} km/h')
@@ -54,7 +54,7 @@ if medida == 'km/h':
     m_s = valor/3.6
     km_s = valor/3600
     m_h = valor*1000
-    if redondear == 'si':
+    if redondear:
         print(f'{valor} km/h son {round(m_s, decimales)} m/s')
         print(f'{valor} km/h son {round(km_s, decimales)} km/s')
         print(f'{valor} km/h son {round(m_h, decimales)} m/h')
