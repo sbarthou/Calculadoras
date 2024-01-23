@@ -1,3 +1,5 @@
+# Calculadora para transformar grados a radianes y biseversa
+
 import math
 from fractions import Fraction
 
